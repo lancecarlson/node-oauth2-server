@@ -105,14 +105,6 @@ ALTER TABLE ONLY oauth_refresh_tokens
 ALTER TABLE ONLY users
     ADD CONSTRAINT users_pkey PRIMARY KEY (id);
 
-
---
--- Name: users_username_password; Type: INDEX; Schema: public; Owner: -; Tablespace: 
---
-
-CREATE INDEX users_username_password ON users USING btree (username, password);
-
-
 --
 -- PostgreSQL database dump complete
 --
